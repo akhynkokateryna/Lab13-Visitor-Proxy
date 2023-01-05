@@ -1,3 +1,5 @@
+package task2;
+
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -20,7 +22,5 @@ public class PDLReader {
         JSONObject jsonObject = new JSONObject(text);
         System.out.println(jsonObject);
         System.out.println(jsonObject.getJSONArray("data").getJSONObject(0).getInt("employee_count"));
-
-
     }
 }
